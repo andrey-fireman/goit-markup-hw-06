@@ -438,9 +438,14 @@
         <form class="modal-form">
           <div class="modal-container">
             <div class="label-container">
-              <label class="name">Name</label>
+              <label class="name" for="user_name">Name</label>
               <div class="input-container">
-                <input type="text" name="user_name" class="border-input" />
+                <input
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                  class="border-input"
+                />
                 <svg
                   wight="18"
                   height="18"
@@ -451,23 +456,76 @@
                 </svg>
               </div>
             </div>
+
+            <div class="label-container">
+              <label class="name" for="phone_number">Phone</label>
+              <div class="input-container">
+                <input
+                  type="tel"
+                  name="phone_number"
+                  id="phone_number"
+                  class="border-input"
+                />
+                <svg
+                  wight="18"
+                  height="24"
+                  viewBox="0 0 24 32"
+                  class="logo-person"
+                >
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="label-container">
+              <label class="name" for="mail_user">Email</label>
+              <div class="input-container">
+                <input
+                  type="email"
+                  name="mail_user"
+                  id="mail_user"
+                  class="border-input"
+                />
+                <svg
+                  wight="18"
+                  height="24"
+                  viewBox="0 0 24 32"
+                  class="logo-person"
+                >
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="label-container">
+              <label class="name" for="feedback">Comment</label>
+              <textarea
+                name="feedback"
+                rows="30"
+                class="comment-input"
+                placeholder="Text input"
+                id="feedback"
+              ></textarea>
+            </div>
+            <div class="policy-container">
+              <input
+                class="policy-input"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label class="policy-label" for="policy"
+                ><span class="policy-text"
+                  >I accept the terms and conditions of the
+                  <a href="" class="policy-link">Privacy Policy</a></span
+                >
+              </label>
+              <svg width="10" height="8" class="policy-icon">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+              <button type="submit" class="modal-button send-button">
+                Send
+              </button>
+            </div>
           </div>
-          <label class="name">
-            Phone
-            <input type="tel" name="phone_number" class="border-input" />
-          </label>
-          <label class="name">
-            Email
-            <input type="email" name="mail_user" class="border-input" />
-          </label>
-          <label class="name">
-            Comment
-            <textarea
-              name="feedback"
-              rows="10"
-              class="comment-input"
-            ></textarea>
-          </label>
         </form>
       </div>
     </div>
