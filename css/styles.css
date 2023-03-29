@@ -522,6 +522,10 @@ margin-bottom: 16px;
     min-width: 264px;
     height: 40px;
     margin-right: 24px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    color: var(--heading-color);
 }
 
 .btn-subscribe{
@@ -550,7 +554,6 @@ input::placeholder{
     font-size: 12px;
     line-height: 1.5;
     color: var(--heading-color);
-    padding-left: 16px;
 }
 
 
